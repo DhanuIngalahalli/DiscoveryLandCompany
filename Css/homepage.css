@@ -1,4 +1,14 @@
-.main-header-content{
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header-content{
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -10,7 +20,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.title{
+.header-title{
     color: whitesmoke;
     font-size: calc(40px + 3vw);
     padding: 12vw 0 5vw 25vw;
@@ -22,75 +32,69 @@
 
 #header{
     width: 100vw;
-    top:0;
-    left: 0;
+    
 }
 
 .video {
     position: absolute;
-    top: 0;
-    left: 0;
     object-fit: cover;
     width: 100vw;
     height: 100vh;
     z-index: -1;
 } 
 
-.bottom{
+.header-bottom{
     display: flex;
     flex-direction: row;
     padding: 10vw 8vw;
     justify-content: space-between;
 }
 
-.bottom-left{
+.header-bottom-left{
     font-size: calc(10px + 1vw);
     color: whitesmoke; 
 }
 
-.main-content{
+.home-container{
     background-image: url("https://dxaurk9yhilm4.cloudfront.net/images/287/background_imagev2_3580431e48aedf97dcedf972d1481942.jpg");
     height: 130vh;
     display: flex;
     padding: 8vw 10vw;
 }
-.left-side-content{
+.text-content{
     display: flex;
     flex-direction: column;
-    width: 50%;
-    padding-right: 5vw;
+    width: 90%;
+    padding-right: 0;
     justify-content: space-between;
     
 }
 
 .left-side-image{
-    width: 55%;
-    height: 100%;
-    padding: 0em;
-    margin-top:5%;
+    height: 90%;
+    width: 90%;
+    margin-top: 0px;
 }
 
 .right-side-image{
-    background-color: #f3f3f3;
-    top: 0;
-    left: 0;
-    width:120%;
-    height:80%;
-    margin:-20%;
+    height: 880px;
+    width: 500px;
+    padding-right: 10px;
+    padding-top: 100px;
 }
 
-.welcome-text {
+.text1 {
     color: #000000;
     margin: 0px 0px;
     padding: 0px 0px;
     padding-top: 10px;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: lighter;
     line-height: 1.1;
     transform: translate(0px, 2.6px);
 }
 
-.ourworld-text {
+.text2 {
     margin: 0px 5px;
     padding: 0px px;
     font-size: 50px;
@@ -98,15 +102,16 @@
     line-height: 1.1;
 }
 
-.first-content-text {
-padding:35px 10px;
-margin:5px 1px;
+.text {
 color: #777;
+font-size: 18px;
+padding:20px;
+margin-top: 30px;
+margin-bottom: 30px;
 line-height: 2;
-font-size:110%;
 }
 .second-content{
-    background-image: linear-gradient(white, #dacaca);
+    background-image: linear-gradient(white, #f3f3f3);
     display: flex;
     flex-direction: column;
 }
@@ -118,17 +123,17 @@ font-size:110%;
 }
 
 .second-content-header-left > h1{
-    font-size: 70px;
+    font-size: 45px;
     margin-bottom: -25px;
     font-weight: normal;
-    margin-top: 0;  
+    margin-top:100px;  
 }
 
 .second-content-header-left > h2{
-    font-size: 50px;
-    font-weight: lighter;
-    font-family: 'Zen Kaku Gothic New', sans-serif;
-    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight:50;
+    font-family: sans-serif;
+    margin-bottom: 50px;
     margin-top: 20px;
 
 }
@@ -136,6 +141,7 @@ font-size:110%;
 .second-content-body {
     height: 65vh;
     position: relative;
+    margin: 50px;
 }
 .photos{
     position:absolute; 
@@ -145,7 +151,7 @@ font-size:110%;
 
 
 .photos > article >img{
-    height:29em;
+    height:35em;
     width:35em;
     padding: 0 10px;
     z-index: -1;
@@ -156,7 +162,7 @@ font-size:110%;
     padding: 0 0 2vw 4vw;
 }
 
-.image-text h3{
+.image-text > h3{
     margin-bottom: 1rem;
     white-space: normal;
     color: #fff;
@@ -166,7 +172,7 @@ font-size:110%;
     text-transform: capitalize;
 }
 
-.image-text  p{
+.image-text > p{
     font-family: messina-sans;
     color: hsla(0,0%,100%,.75);
     line-height: 1.5;
@@ -188,14 +194,15 @@ font-size:110%;
     height: 90vw;
     display: flex;
     flex-direction: column;
-    background-color: #f3f3f3;
+    background-color: #f3f3f3
 }
 
 .third-content-header {
     display: flex;
     flex-direction: column;
-    padding: 10vh 10vw;
     height: 25%;
+    padding:20vh 10vw;
+    
 }
 
 .third-content-header > h1{
@@ -227,7 +234,7 @@ font-size:110%;
     height: 84%;
 }
 .third-content-body-first-image{
-    width: 77.3%;
+    width: 67.5%;
     object-fit: fill;
     position: absolute;
     
@@ -259,13 +266,13 @@ font-size:110%;
     height: 100%;
     margin-top: -4vw;
 }
-.map-link{
+.map-scroll{
     text-align: center;
     display: flex;
-    margin: 3vh 5vw ;
+    margin: 10vh 5vw ;
 }
 
-.map-dropdown{
+.map{
     list-style-type:none;
     font-size: 20px;
     min-width: 10px;
@@ -281,7 +288,7 @@ font-size:110%;
 }
 
 .weather{
-    height: 5%;
+    height: 6%;
     display: flex;
     margin: 2vw 3vw;
     justify-content: space-around;
@@ -310,7 +317,6 @@ font-size:110%;
     font-size:26px;
     flex-direction: column;
     font-family: 'Zen Kaku Gothic New', sans-serif;
-    
     font-weight: normal;
 }
 
@@ -319,7 +325,7 @@ font-size:110%;
     padding-top: 3vw;
     margin: 0 5vw 5vw 5vw;
 }
-.location-footer > img{
+.location-footer > svg{
     height: 1.5vw;
     margin-top: 10px;
     margin-right: 15px;
@@ -332,17 +338,18 @@ font-size:110%;
     display: flex;
    align-items: center;
 }
-.image-container{
-    height:65em;
+.img-container{
+    height:55em;
     width:85em;
 }
 
-.image-container img {
+.img-container > img {
     width: 100%;
     height: 100%;
     
 }
-.image-container span {
+
+.img-container > span {
     position: absolute;
     font-size:50px;
     font-family:calibri;
