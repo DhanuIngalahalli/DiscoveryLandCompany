@@ -93,11 +93,9 @@ body, html {
 .Second-section-right {
     width: 50%;
 }
-.Second-section > img {
+.Second-section-right > img {
     width: 100%;
     height: 90%;
-    padding:0 10vw;
-  
 }
 
 .Third-section{
@@ -242,7 +240,7 @@ body, html {
 }
 
 
-.section-eight{
+.Eighth-section{
     display: flex;
     min-height: 50vw;
     padding: 5vw 5vw;
@@ -250,14 +248,14 @@ body, html {
 
 .Eighth-section-left{
     width: 50%;
-    padding: 0 4vw 0 10vw;
+    padding: 0 4vw 0 8vw;
     display: flex;
     flex-direction: column;
 }
 
 .Eighth-section-right {
     width: 50%;
-    padding: 0 10vw 13vw 4vw;
+    padding: 0 6vw 13vw 4vw;
 }
 
 .Eighth-section-left-top {
